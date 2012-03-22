@@ -1,0 +1,9 @@
+This script sequentially installs all available DLC's in the current directory
+unassisted by any user.
+
+It currently depends on:
+	GnuWin32
+	Python
+to function accordingly.
+
+It is based mainly in python, with windows commands given to command prompt and AutoIt to script Windows actions to install automatically.
