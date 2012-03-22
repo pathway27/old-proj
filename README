@@ -7,3 +7,8 @@ It currently depends on:
 to function accordingly.
 
 It is based mainly in python, with windows commands given to command prompt and AutoIt to script Windows actions to install automatically.
+
+USAGE
+
+Put install.py and done.exe in DLC folder, and run via cmd:
+	install.py
