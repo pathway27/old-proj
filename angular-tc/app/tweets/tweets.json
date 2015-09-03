@@ -1,0 +1,18 @@
+[
+  {
+    "status": "success",
+    "timestamp": 1392161553,
+    "messages": [
+        {
+            "author": "John Smith",
+            "date": "2014-02-12 10:23:12",
+            "message": "Hi there, just testing this service"
+        },
+        {
+            "author": "Johnny Appleseed",
+            "date": "2014-02-12 10:27:12",
+            "message": "It is sunny in Sydney today."
+        }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+# Mac
+.DS_Store
+
+angular-phonecat/
+
+node_modules
+.tmp
+.sass-cache
+app/bower_components
+dist

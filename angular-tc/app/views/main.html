@@ -1,0 +1,62 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">angular tc</h3>
+</div>
+
+<div class="jumbotron">
+    <p><button class="btn btn-primary" ng-click="fetchTweets()">
+        Fetch New Tweets
+    </button></p>
+  <p class="btn-{{tweets.status}}" ng-show="tweets.status">
+    {{tweets.status | uppercase}} fetch on
+    {{tweets.timestamp | date:'medium'}}
+  </p>
+</div>
+
+<div id="tweets-container" class="center-block">
+  <h2>Tweets</h2>
+  <ul id="tweets" class="list-unstyled">
+    <li>
+      <div>
+        <span class="author pull-left">Ev Williams</span>
+        <span class="date pull-right">22/03/06 8:02</span><br />
+        <p class="message clearfix">just setting up my twttr</p>
+      </div>
+      <div>
+        <span class="author pull-left">Jack Dorsey</span>
+        <span class="date pull-right">22/03/06 7:50</span><br />
+        <p class="message clearfix">just setting up my twttr</p>
+      </div>
+
+      <!--  New Tweets -->
+
+     <div ng-repeat="tweet in tweets.messages" class="fader">
+        <span class="author pull-left">{{tweet.author}}</span>
+        <span class="date pull-right">
+          {{tweet.date | date:'d/MM/yy h:mm'}}
+        </span>
+        <br />
+        <p class="message clearfix">{{tweet.message}}<p>
+      </div>
+
+      <!-- New Tweets -->
+
+    </li>
+
+  </ul>
+</div>
+
+<br />
+<div class="footer">
+  <a href="http://www.yeoman.io">
+    <img src="images/yeoman.png" href="yeoman.io" alt="I'm Yeoman">
+  </a>
+
+  <a href="http://angularjs.org/">
+    <img class="AngularJS-small" src="http://angularjs.org/img/AngularJS-small.png" >
+  </a>
+</div>
