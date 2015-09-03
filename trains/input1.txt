@@ -1,0 +1,15 @@
+graph: AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+distance: ABC, AD, ADC, AEBCD, AED
+trips: C, C, <= 3
+trips: A, C, == 4
+shortest: A, C
+shortest: B, B
+trips_distance: C, C, < 30
+
+graph: AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+distance: ABC, AD, ADC, AEBCD, AED
+trips: C, C, <= 3
+trips: A, C, == 4
+shortest: A, C
+shortest: B, B
+trips_distance: C, C, < 30
